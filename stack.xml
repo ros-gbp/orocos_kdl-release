@@ -1,11 +1,19 @@
 <stack>
-  <description brief="orocos_kinematics_dynamics">orocos_kinematics_dynamics</description>
-  <author>Maintained by Ruben Smits</author>
-  <license>GPL,LGPL / BSD,LGPL</license>  
-  <review status="unreviewed" notes=""/>
-  <url>http://ros.org/wiki/orocos_kinematics_dynamics</url>
+  <name>orocos-kdl</name>
+  <version>1.1.99</version>
+  <description brief="KDL">Orocos Kinematics and Dynamics Library</description>
+  <author email="orocos-dev@lists.mech.kuleuven.be">Orocos Devs</author>
+  <maintainer email="vrabaud@willowgarage.com">Vincent Rabaud</maintainer>
+  <maintainer email="isucan@willowgarage.com">Ioan Sucan</maintainer>
 
-  <depend stack="ros" />
-  <depend stack="common_rosdeps" />
+  <review status="unreviewed" notes=""/>
+  <copyright>Willow Garage</copyright>
+  <url>http://ros.org/wiki/orocos_kinematics_dynamics</url>
+  <license>GPL,LGPL / BSD,LGPL</license>  
+
+  <build_depends>catkin</build_depends>
+  <build_depends>boost</build_depends>
+
+  <depends>boost</depends>
 
 </stack>

@@ -1,14 +1,14 @@
-Source: ros-fuerte-orocos-kdl
+Source: ros-groovy-orocos-kdl
 Section: misc
 Priority: extra
 Maintainer: Vincent Rabaud <vrabaud@willowgarage.com>, Ioan Sucan <isucan@willowgarage.com>
-Build-Depends: debhelper (>= 7.0.50~), ros-fuerte-catkin,libboost1.40-all-dev
+Build-Depends: debhelper (>= 7.0.50~), libboost1.46-all-dev,ros-groovy-catkin
 Homepage: http://ros.org/wiki/orocos_kinematics_dynamics
 Standards-Version: 3.9.2
 
-Package: ros-fuerte-orocos-kdl
+Package: ros-groovy-orocos-kdl
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libboost1.40-all-dev
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost1.46-all-dev
 Description: Orocos Kinematics and Dynamics Library
  .
  This stack contains the packages:

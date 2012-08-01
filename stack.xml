@@ -7,15 +7,18 @@
   <maintainer email="isucan@willowgarage.com">Ioan Sucan</maintainer>
 
   <review status="unreviewed" notes=""/>
-  <copyright>Willow Garage</copyright>
+  <copyright>Orocos</copyright>
   <url>http://ros.org/wiki/orocos_kinematics_dynamics</url>
   <license>GPL,LGPL / BSD,LGPL</license>  
 
   <build_depends>catkin</build_depends>
   <build_depends>boost</build_depends>
   <build_depends>eigen</build_depends>
+  <build_depends>cppunit</build_depends>
+  <build_depends>pkg-config</build_depends>
 
   <depends>boost</depends>
   <depends>eigen</depends>
+  <depends>cppunit</depends>
 
 </stack>

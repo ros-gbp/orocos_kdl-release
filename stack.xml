@@ -20,5 +20,6 @@
   <depends>boost</depends>
   <depends>eigen</depends>
   <depends>cppunit</depends>
+  <depends>pkg-config</depends> <!-- For the CMake config -->
 
 </stack>

@@ -14,6 +14,7 @@ export DH_OPTIONS=-v --buildsystem=cmake
 #  https://code.ros.org/trac/ros/ticket/2977
 #  https://code.ros.org/trac/ros/ticket/3842
 export LDFLAGS=
+export PKG_CONFIG_PATH=/opt/ros/groovy/lib/pkgconfig
 
 %:
 	dh  $@
@@ -24,6 +25,7 @@ override_dh_auto_configure:
 	# set things like CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
 	if [ -f "/opt/ros/groovy/setup.sh" ]; then . "/opt/ros/groovy/setup.sh"; fi && \
 	dh_auto_configure -- \
+		-DCATKIN_BUILD_BINARY_PACKAGE="1" \
 		-DCMAKE_INSTALL_PREFIX="/opt/ros/groovy" \
 		-DCMAKE_PREFIX_PATH="/opt/ros/groovy"
 

@@ -1,0 +1,12 @@
+Source: ros-groovy-kdl
+Section: misc
+Priority: extra
+Maintainer: Ruben Smits <ruben.smits@intermodalics.eu>
+Build-Depends: debhelper (>= 7.0.50~), 
+Homepage: http://www.orocos.org/kdl
+Standards-Version: 3.9.2
+
+Package: ros-groovy-kdl
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-groovy-orocos-kdl,ros-groovy-python-orocos-kdl
+Description: This package contains a recent version of the Kinematics and Dynamics Library (KDL), distributed by the Orocos Project. It is a meta-package that depends on orocos_kdl which contains the c++ version and python_orocos_kdl which contains the generated python bindings

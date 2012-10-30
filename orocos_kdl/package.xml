@@ -1,5 +1,5 @@
 <package>
-  <name>orocos_kdl</name>
+  <name>Orocos-KDL</name>
   <version>1.1.99</version>
   <description>This package contains a recent version of the Kinematics and Dynamics
 Library (KDL), distributed by the Orocos Project.</description>

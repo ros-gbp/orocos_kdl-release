@@ -6,17 +6,18 @@ find_package(catkin REQUIRED COMPONENTS orocos_kdl)
 
 catkin_package(DEPENDS orocos_kdl
     # INCLUDE_DIRS include
-    LIBRARIES ${PROJECT_NAME})
+    LIBRARIES PyKDL)
 
 include_directories(${catkin_INCLUDE_DIRS})
 include_directories(${orocos_kdl_INCLUDE_DIRS})
+link_directories(${orocos_kdl_LIBRARY_DIRS})
 
-catkin_python_setup()
+# catkin_python_setup()
 
 #set the default path for built executables to the "bin" directory
-set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+# set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 #set the default path for built libraries to the "lib" directory
-set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
+# set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
 #uncomment if you have defined messages
 #genmsg()
@@ -34,5 +35,6 @@ include_directories(${SIP_INCLUDE_DIR} ${PYTHON_INCLUDE_DIRS})
 file(GLOB SIP_FILES "${CMAKE_CURRENT_SOURCE_DIR}/*.sip")
 set(SIP_INCLUDES ${SIP_FILES})
 set(SIP_EXTRA_OPTIONS "-o")
+set(PYTHON_SITE_PACKAGES_INSTALL_DIR ${PYTHON_INSTALL_DIR})
 add_sip_python_module(PyKDL PyKDL/PyKDL.sip orocos-kdl)
 #set(SIP_EXTRA_FILES_DEPEND ${SIP_FILES})

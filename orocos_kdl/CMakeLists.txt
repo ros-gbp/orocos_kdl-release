@@ -1,6 +1,6 @@
 # http://ros.org/doc/groovy/api/catkin/html/user_guide/supposed.html
 cmake_minimum_required(VERSION 2.8.3)
-project(Orocos-KDL)
+project(orocos_kdl)
 # Load catkin and all dependencies required for this package
 find_package(catkin REQUIRED)
 
@@ -87,6 +87,11 @@ CONFIGURE_FILE(
   "${CMAKE_CURRENT_SOURCE_DIR}/cmake_uninstall.cmake.in"
   "${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake"
   IMMEDIATE @ONLY)
+
+CONFIGURE_FILE(${CMAKE_CURRENT_SOURCE_DIR}/KDLConfig.cmake.in
+               ${CMAKE_CURRENT_BINARY_DIR}/orocos-kdl-config.cmake @ONLY)
+INSTALL(FILES ${CMAKE_CURRENT_BINARY_DIR}/orocos-kdl-config.cmake
+        DESTINATION share/orocos-kdl)
 
 install(DIRECTORY include/kdl/
   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}/kdl

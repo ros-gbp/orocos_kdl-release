@@ -2,9 +2,9 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(python_orocos_kdl)
 # Load catkin and all dependencies required for this package
-find_package(catkin REQUIRED COMPONENTS Orocos-KDL)
+find_package(catkin REQUIRED COMPONENTS orocos_kdl)
 
-catkin_package(DEPENDS Orocos-KDL
+catkin_package(DEPENDS orocos_kdl
     # INCLUDE_DIRS include
     LIBRARIES ${PROJECT_NAME})
 

@@ -10,7 +10,7 @@
 
   <author>Ruben Smits</author>
 
-  <build_depend>Orocos-KDL</build_depend>
-  <run_depend>Orocos-KDL</run_depend>
-  <test_depend>Orocos-KDL</test_depend>
+  <build_depend>orocos_kdl</build_depend>
+  <run_depend>orocos_kdl</run_depend>
+  <test_depend>orocos_kdl</test_depend>
 </package>

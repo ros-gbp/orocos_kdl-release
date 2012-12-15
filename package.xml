@@ -8,13 +8,13 @@ Library (KDL), distributed by the Orocos Project.</description>
   <license>LGPL</license>
 
   <url type="website">http://www.orocos.org/kdl</url>
-<!-- <url type="bugtracker"></url> -->
 
   <author>Ruben Smits</author>
   <author>Erwin Aertbelien</author>
   <author>Orocos Developers</author>
 
-  <build_depend>catkin</build_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+
   <build_depend>cppunit</build_depend>
   <build_depend>pkg-config</build_depend>
   <build_depend>eigen</build_depend>

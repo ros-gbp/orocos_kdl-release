@@ -1,0 +1,12 @@
+Source: ros-groovy-python-orocos-kdl
+Section: misc
+Priority: extra
+Maintainer: Ruben Smits <ruben.smits@intermodalics.eu>
+Build-Depends: debhelper (>= 7.0.50~), ros-groovy-orocos-kdl,ros-groovy-catkin,python-sip-dev
+Homepage: http://ros.org/wiki/python_orocos_kdl
+Standards-Version: 3.9.2
+
+Package: ros-groovy-python-orocos-kdl
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-sip-dev,ros-groovy-orocos-kdl
+Description: python_orocos_kdl

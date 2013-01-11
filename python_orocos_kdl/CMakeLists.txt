@@ -4,9 +4,9 @@ project(python_orocos_kdl)
 # Load catkin and all dependencies required for this package
 find_package(catkin REQUIRED COMPONENTS orocos_kdl)
 
-catkin_package(DEPENDS orocos_kdl
-    # INCLUDE_DIRS include
-    LIBRARIES PyKDL)
+catkin_package(
+  CATKIN_DEPENDS orocos_kdl
+)
 
 include_directories(${catkin_INCLUDE_DIRS})
 include_directories(${orocos_kdl_INCLUDE_DIRS})

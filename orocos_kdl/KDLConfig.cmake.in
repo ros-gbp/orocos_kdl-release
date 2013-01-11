@@ -25,7 +25,7 @@ IF ( PKG_CONFIG_FOUND )
       message("   Compiler flags: ${Orocos-KDL_CFLAGS}")
       message("   Libraries: ${Orocos-KDL_LIBRARIES}")
       message("   Libraries in: ${Orocos-KDL_LIBRARY_DIRS}")
-      message("   Linker flags : ${Orocos-KDL_LD_FLAGS}")
+      message("   Linker flags: ${Orocos-KDL_LD_FLAGS}")
       message("   Defines: ${Orocos-KDL_DEFINES}")
     ENDIF(NOT Orocos-KDL_FIND_QUIETLY)
 

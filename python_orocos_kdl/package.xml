@@ -17,6 +17,4 @@
 
   <run_depend>python-sip</run_depend>
   <run_depend>orocos_kdl</run_depend>
-
-  <test_depend>orocos_kdl</test_depend>
 </package>
